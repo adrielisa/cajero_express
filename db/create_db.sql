@@ -10,6 +10,21 @@ CREATE TABLE tb_clientes(
     ap_materno VARCHAR(25)
 );
 
+ALTER TABLE tb_clientes 
+ADD COLUMN estado
+ENUM ('Activo','inactivo') DEFAULT 'inactivo';
+
+/*Creamos la nueva tabla */
+CREATE TABLE tb_log_clientes(
+    id_log_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    accion VARCHAR(10),
+    id_cliente INT,
+    nombre_completo VARCHAR(250),
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
 CREATE TABLE tb_tarjetas(
     id_tarjeta INT PRIMARY KEY AUTO_INCREMENT,
     n_tarjeta  VARCHAR(16),

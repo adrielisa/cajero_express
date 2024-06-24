@@ -2,12 +2,12 @@
 
 $hostname = "localhost";
 $username = "root";
-$database = "cajero_express";
+$password = "";
+$database = "cajero_express_sm35";
 
-$conn = new mysqli($hostname, $username, $password, $databse);
+$conn = new mysqli($hostname, $username, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 ?>

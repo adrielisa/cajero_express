@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['id'])){
+    header("Location: ../../index.html");
+}
+
+$saldo = $_SESSION['saldo'];
+
+//Para juntar nombre y apellido
+$nombre = $_SESSION['nombre'];
+$ap_paterno = $_SESSION['ap_paterno'];
+$nombre_completo = $nombre . " " . $ap_paterno;
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,10 +30,10 @@
 </head>
 <body class="fondo">
     <header>
-        <h1 class="titulo m-4">Bienvenido Adriel Rodriguez!</h1>
+        <h1 class="titulo m-4">Bienvenido <?= $nombre_completo; ?></h1>
     </header>
 
-    <h2 class="subtitulo text">Su saldo es: $13.25</h2>
+    <h2 class="subtitulo text">Su saldo es: $ <?= $saldo; ?></h2>
 
     <div class="col-4 text-center p-4 ">
         <a href="../bienvenida/index.php" class="btn btn-danger">Regresar</a>

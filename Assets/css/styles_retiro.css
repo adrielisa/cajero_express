@@ -8,6 +8,11 @@ button {
     height: 50px;
 }
 
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
 body {
     background-color: gainsboro;
 }
