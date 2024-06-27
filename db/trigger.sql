@@ -116,6 +116,9 @@ VALUES
     );
 END;
 
+
+
+/* Este trigger es un mecanismo que nos crea un "historial"  */
 // DELIMITER //
 CREATE TRIGGER tg_log_clientes_update
 AFTER

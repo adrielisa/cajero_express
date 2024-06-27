@@ -25,6 +25,7 @@ if (!isset($_SESSION['id'])) {
         <!--Here is navbar's house -->
     </header>
     <main>
+    <!-- -->
         <h1 class="text-center p-3">Retirar</h1>
         <p>Bienvenido usuario ^_^. ¿Cuánto dinero te gustaría retirar?</p>
         <div class="container-fluid row">

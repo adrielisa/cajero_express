@@ -2,7 +2,7 @@
 //Usamos IF si es GET o si es POST
 
 //IF si es GET
-if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+/* if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     //IF si el monto es una cantidad mayor a 0
     if ($_GET['monto'] >0) {
         // Mostrar el monto usando echo
@@ -23,6 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             echo '<h1>El monto no es válido</h1>';
         }
     }
-}
+} */
+
+//Modificamos el update 
 
 ?>

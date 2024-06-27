@@ -5,10 +5,15 @@ session_start();
 if(!isset($_SESSION['id'])){
     header("Location: ../../index.html");
 }
-
 $saldo = $_SESSION['saldo'];
 
+
+//include "../../connection/conn.php"
+//Realizar una consulta como las que hemos hecho para que el saldo se actualice si se modifica en la base de datos
+
+
 //Para juntar nombre y apellido
+
 $nombre = $_SESSION['nombre'];
 $ap_paterno = $_SESSION['ap_paterno'];
 $nombre_completo = $nombre . " " . $ap_paterno;
