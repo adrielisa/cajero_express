@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 print_r($_POST);
 
 session_start();
@@ -8,6 +11,7 @@ if(isset($_POST['n_tarjeta']) && isset($_POST['nip'])) {
     require_once './conn.php';
     $n_tarjeta = $_POST['n_tarjeta'];
     $nip = $_POST['nip'];
+    
     $sql = "SELECT id_tarjeta ,n_tarjeta ,nip , saldo, nombre, ap_paterno, ap_materno   /* Select debe ser Procedimiento almacenado */
         FROM tb_tarjetas
         INNER JOIN tb_clientes
@@ -34,3 +38,4 @@ if(isset($_POST['n_tarjeta']) && isset($_POST['nip'])) {
 }
 
 ?>
+
