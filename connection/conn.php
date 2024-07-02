@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$database = "cajero_express_sm35";
+$database = "cajero_express";
 
 $conn = new mysqli($hostname, $username, $password, $database);
 

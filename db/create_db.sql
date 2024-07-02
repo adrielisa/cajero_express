@@ -1,12 +1,12 @@
 
-CREATE DATABASE cajero_express_sm35;
+CREATE DATABASE cajero_express;
 
-USE cajero_express_sm35;
+USE cajero_express;
 
 CREATE TABLE tb_clientes(
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(25),
-    ap_paterno VARCHAR(25)
+    ap_paterno VARCHAR(25),
     ap_materno VARCHAR(25)
 );
 

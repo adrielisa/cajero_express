@@ -36,4 +36,20 @@ BEGIN
     WHERE id_cliente = p_id_cliente;
 END //
 
+
+
+//Nuevo cierre de sesión
 DELIMITER ;
+
+
+
+
+CREATE PROCEDURE sp_set_cliente_inactivo (
+    IN id_cliente INT
+)
+BEGIN
+    UPDATE tb_clientes
+    SET estado = 'Inactivo'
+    WHERE id_cliente = id_cliente;
+END 
+
